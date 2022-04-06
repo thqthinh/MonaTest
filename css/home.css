@@ -260,6 +260,9 @@ input[type="number"]::-webkit-outer-spin-button {
   .datepicker .datepicker-item.--return .datepicker-contrl {
     justify-content: flex-end;
   }
+  #date-to{
+    text-align: right;
+  }
 }
 @media screen and (max-width: 374.98px) {
   .datepicker {
