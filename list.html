@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/list.css">
+</head>
+
+<body>
+  <header class="header --sm-height-header --bg-purple w-full">
+    <div class="container flex ai-center jc-between">
+      <div class="header__left flex">
+        <a href="#" class="header__logo">
+          <img src="img/logo-img-2.png" alt="">
+        </a>
+        <div class="header__lang flex">
+          <a href="#" class="header__lang-item"><img src="img/lang-1.png" alt=""></a>
+          <a href="#" class="header__lang-item"><img src="img/lang-2.png" alt=""></a>
+        </div>
+      </div>
+      <ul class="header__nav transition-all flex ">
+        <li class="item"><a href="#" class="item-link  transition-all font-med --white-cl">Promotion</a></li>
+        <li class="item"><a href="#" class="item-link  transition-all font-med --white-cl">Flight Schedule</a></li>
+        <li class="item"><a href="#" class="item-link  transition-all font-med --white-cl">About us</a></li>
+        <li class="item"><a href="#" class="item-link  transition-all font-med --white-cl">Payment Guide</a></li>
+        <li><a href="#" class=" btn-primary hide-on-desktop --bg-purple --white-cl">Booking now</a></li>
+
+      </ul>
+      <a href="#" class="header__cta btn-primary --bg-white hide-on-tablet">Booking now</a>
+      <div class="header__hamburger relative hide-on-desktop pointer">
+        <span class="transition-all"></span>
+        <span class="transition-all"></span>
+        <span class="transition-all"></span>
+      </div>
+    </div>
+  </header>
+  <div class="searchbox --sm-height-header --bg-white">
+    <div class="container h-full">
+      <form action="" class="searchbox-form h-full flex ai-center ">
+        <div class="searchbox-input-has-switch searchbox-col flex ai-center jc-between">
+          <div class="searchbox-input-wrapper w-fit">
+            <input id="input-departure" type="text" value="Da Nang (DAD)"
+              class="searchbox-input w-full heading --h3 border-none outline-none --purple-cl font-semibold upper">
+            <div class="searchbox-desc --bd12 font-book">Fri, 22 Mar, 2022</div>
+          </div>
+          <div class="switch-btn transition-all pointer opacity-3 flex-shrink"><img src="img/switch-btn.svg" alt=""></div>
+          <div class="searchbox-input-wrapper w-fit --to">
+            <input id="input-return" type="text" value="Ho Chi Minh (SGN)"
+              class="searchbox-input w-full heading --h3 border-none outline-none --purple-cl font-semibold upper">
+            <div class="searchbox-desc --bd12 font-book">Fri, 22 Mar, 2022</div>
+          </div>
+        </div>
+        <div class="searchbox-right flex w-full jc-between">
+          <div class="searchbox-occupancy searchbox-col flex ai-center">
+            <div class="searchbox-occupancy-item font-semibold">Round-trip</div>
+            <div class="searchbox-occupancy-item font-semibold"><span class="--purple-cl">02</span> Adult, <span
+                class="--purple-cl">01</span> children</div>
+            <div class="searchbox-occupancy-item font-semibold">Business Class</div>
+          </div>
+          <button type="submit"
+            class="btn-primary flex-inline ai-center border-0 pointer --bg-orange --white-cl searchbox-cta">
+            <span>Change Flights</span>
+            <i class="icon"><img class="block" src="img/search-icon.svg" alt=""></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <main class="mainwrapper --bg-purple-light">
+    <div class="container flex">
+      <div class="main-col main-list">
+        <div class="main-filterbox flex ai-center jc-end">
+          <span class="main-filterbox-text opacity-5 flex-shrink">Filter</span>
+          <div class="main-filterbox-panel flex ai-center">
+            <div class="main-filterbox-item --transit pointer relative  --bg-white rounded-lg">
+              <span class="main-filterbox-select flex jc-between ">
+                <span class="value">Transit</span>
+                <i class="icon"><img src="img/dropdown-icon.svg" alt=""></i>
+              </span>
+              <div class="main-filterbox-list z-20 --bg-white transition-all shadow-main border-gray w-fit rounded-lg">
+                <div class="item flex ai-center">
+                  <input type="checkbox" class="item-input">
+                  <span class="item-text">Transit 1</span>
+                </div>
+                <div class="item flex ai-center">
+                  <input type="checkbox" class="item-input">
+                  <span class="item-text">Transit 2</span>
+                </div>
+                <div class="item flex ai-center">
+                  <input type="checkbox" class="item-input">
+                  <span class="item-text">Transit 3</span>
+                </div>
+              </div>
+            </div>
+            <div class="main-filterbox-item --transit pointer relative  --bg-white rounded-lg">
+              <span class="main-filterbox-select flex jc-between ">
+                <span class="value">Time</span>
+                <i class="icon"><img src="img/dropdown-icon.svg" alt=""></i>
+              </span>
+              <div class="main-filterbox-list z-20 --bg-white transition-all shadow-main border-gray w-fit rounded-lg">
+                <div class="item flex ai-center">
+                  <input type="checkbox" class="item-input">
+                  <span class="item-text">00:00 - 06:00</span>
+                </div>
+                <div class="item flex ai-center">
+                  <input type="checkbox" class="item-input">
+                  <span class="item-text">06:00 - 12:00</span>
+                </div>
+                <div class="item flex ai-center">
+                  <input type="checkbox" class="item-input">
+                  <span class="item-text">12:00 - 18:00</span>
+                </div>
+              </div>
+            </div>
+            <div class="main-filterbox-item --transit pointer relative  --bg-white rounded-lg">
+              <span class="main-filterbox-select flex jc-between ">
+                <span class="value">Airline</span>
+                <i class="icon"><img src="img/dropdown-icon.svg" alt=""></i>
+              </span>
+              <div class="main-filterbox-list airpot z-20 --bg-white transition-all shadow-main border-gray w-fit rounded-lg">
+                <div class="item flex ">
+                  <input type="checkbox" class="item-input">
+                  <label class="item-text">VietJet Air</label>
+                  <span class="item-price ml-auto block ">1,652,520 VND</span>
+                </div>
+                <div class="item flex ">
+                  <input type="checkbox" class="item-input">
+                  <label class="item-text">Vietnam Airlines</label>
+                  <span class="item-price ml-auto block">1,652,520 VND</span>
+
+                </div>
+                <div class="item flex ">
+                  <input type="checkbox" class="item-input">
+                  <label class="item-text upper">Bamboo Airways</label>
+                  <span class="item-price ml-auto block">1,652,520 VND</span>
+
+                </div>
+              </div>
+            </div>
+            <div class="main-filterbox-item --transit pointer relative  --bg-white rounded-lg">
+              <span class="main-filterbox-select flex jc-between ">
+                <span class="value">Transit</span>
+                <i class="icon"><img src="img/dropdown-icon.svg" alt=""></i>
+              </span>
+              <div class="main-filterbox-list z-20 --bg-white transition-all shadow-main border-gray w-fit rounded-lg">
+                <div class="item flex ai-center">
+                  <input type="checkbox" class="item-input">
+                  <span class="item-text">Transit 1</span>
+                </div>
+                <div class="item flex ai-center">
+                  <input type="checkbox" class="item-input">
+                  <span class="item-text">Transit 2</span>
+                </div>
+                <div class="item flex ai-center">
+                  <input type="checkbox" class="item-input">
+                  <span class="item-text">Transit 3</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-result flex flex-col">
+
+        </div>
+
+      </div>
+      <div class="main-col sidebar rounded-lg overflow-hidden pt-15">
+        <div class="sidebar-heading --bg-white  px-15">
+          <h2 class="sidebar-title font-semibold upper ">your flights</h2>
+        </div>
+        <div class="sidebar-bottom --bg-white px-15">
+          <div class="sidebar-item py-15">
+            <div class="sidebar-row flex ai-center">
+              <div class="sidebar-order mr-12 rounded-full flex ai-center jc-center font-semibold --white-cl">
+                <span class="number">01</span>
+              </div>
+              <div class="sidebar-date-location">
+                <div class="sidebar-date font-book">Fri, 11 Feb, 2022</div>
+                <div class="sidebar-location font-semibold">Da Nang - Ho Chi Minh</div>
+              </div>
+            </div>
+            <div class="sidebar-row flex ai-center">
+              <div class="sidebar-logo mr-12">
+                <img src="img/logo-airway.png" alt="">
+              </div>
+              <div class="sidebar-details">
+                <div class="sidebar-name leading-lg upper font-semibold">Bamboo Airways</div>
+                <a href="#" class="sidebar-linkdetails --purple-cl font-semibold underline">Details</a>
+              </div>
+            </div>
+            <div class="sidebar-row flex ai-center jc-between">
+              <div class="sidebar-departure text-center">
+                <div class="sidebar-time mb-6">21:40</div>
+                <div class="sidebar-summary summary-location ">DAD</div>
+              </div>
+              <div class="sidebar-direct flex flex-col ai-center">
+                <div class="sidebar-timetotal">1h 30m</div>
+                <div class="sidebar-direct-line flex ai-center jc-between --bg-purple">
+                  <div class="dot-purple --white"></div>
+                  <div class="dot-purple --purple"></div>
+                </div>
+                <div class="sidebar-direct-txt">Direct</div>
+              </div>
+              <div class="sidebar-return text-center">
+                <div class="sidebar-time mb-6">23:10</div>
+                <div class="sidebar-summary summary-location ">DAD</div>
+              </div>
+            </div>
+            <button
+              class="btn w-full btn-primary mt-20 --purple-cl --bg-purple-light --bd12 font-semibold border-0 outline-none rounded-lg">Change
+              departure flight</button>
+          </div>
+          <div class="sidebar-item py-15">
+            <div class="sidebar-row flex ai-center">
+              <div class="sidebar-order mr-12 rounded-full flex ai-center jc-center font-semibold --white-cl">
+                <span class="number">02</span>
+              </div>
+              <div class="sidebar-date-location">
+                <div class="sidebar-date font-book">Sun, 13 Feb, 2022</div>
+                <div class="sidebar-location font-semibold">Ho Chi Minh - Da Nang</div>
+              </div>
+            </div>
+            <div class="sidebar-row flex ai-center">
+              <div class="sidebar-logo mr-12">
+                <img src="img/logo-airway.png" alt="">
+              </div>
+              <div class="sidebar-details">
+                <div class="sidebar-name leading-lg upper font-semibold">Bamboo Airways</div>
+                <a href="#" class="sidebar-linkdetails --purple-cl font-semibold underline">Details</a>
+              </div>
+            </div>
+            <div class="sidebar-row flex ai-center jc-between">
+              <div class="sidebar-departure text-center">
+                <div class="sidebar-time mb-6">21:40</div>
+                <div class="sidebar-summary summary-location ">DAD</div>
+              </div>
+              <div class="sidebar-direct flex flex-col ai-center">
+                <div class="sidebar-timetotal">1h 30m</div>
+                <div class="sidebar-direct-line flex ai-center jc-between --bg-purple">
+                  <div class="dot-purple --white"></div>
+                  <div class="dot-purple --purple"></div>
+                </div>
+                <div class="sidebar-direct-txt">Direct</div>
+              </div>
+              <div class="sidebar-return text-center">
+                <div class="sidebar-time mb-6">23:10</div>
+                <div class="sidebar-summary summary-location ">DAD</div>
+              </div>
+            </div>
+            <button
+              class="btn w-full btn-primary mt-20 --purple-cl --bg-purple-light --bd12 font-semibold border-0 outline-none rounded-lg">Change
+              departure flight</button>
+          </div>
+        </div>
+        <div class="sidebar-subtotal px-15 py-15">
+          <div class="sidebar-subtotal-txt font-book">Subtotal</div>
+          <div class="sidebar-subtotal-number font-semibold --orange-cl">1,322,000 vnd</div>
+        </div>
+      </div>
+  </main>
+
+
+
+  <footer class="footer relative --bg-purple-light ">
+    <div class="container relative flex jc-between z-10 ai-center">
+      <div class="footer__col">
+        <ul class="footer__list flex ai-center">
+          <li class="footer__list-item flex ai-center">
+            <div class="icon"><img class="block pointer" src="img/phone-icon.png" alt=""></div>
+            <div class="text">Call us: +84 908 02 02 58</div>
+          </li>
+          <li class="footer__list-item flex ai-center">
+            <i class="icon"><img class="block pointer" src="img/mail-icon.png" alt=""></i>
+            <div class="text">Email: chucinog@gmail.com</div>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <div class="footer__socials flex ai-center">
+          <div class="text">Follow us</div>
+          <div class="line"></div>
+          <a href="#" class="icon"><img class="block " src="img/facebook-icon.png" alt=""></a>
+          <a href="" class="icon"><img class="block " src="img/ins-icon.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/main.js"></script>
+  <script src="js/list.js"></script>
+
+</body>
+
+
+
+</html>

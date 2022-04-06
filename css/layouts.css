@@ -1,0 +1,75 @@
+@-ms-viewport {
+  width: device-width;
+}
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+input,button{
+  cursor: pointer;
+}
+body {
+  width: 100%;
+  max-width: var(container-max-width);
+  margin: auto;
+  font-size: var(--body14-fs);
+  line-height: var(--body14-lh);
+  font-family: "Biennale";
+  color: var(--black-cl);
+  background: var(white-cl);
+  position: relative;
+  overflow-x: hidden;
+}
+.mainwrapper {
+  width: 100%;
+  margin: auto;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: var(--gap);
+  padding-left: var(--gap);
+  margin-right: auto;
+  margin-left: auto;
+  @media screen and (max-width: 767.98px) {
+    padding-right: calc(var(--gap) / 2);
+    padding-left: calc(var(--gap) / 2);
+  }
+}
+
+.container {
+  width: 100%;
+  padding-right: calc(var(--gap) / 2);
+  padding-left: calc(var(--gap) / 2);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: var(--container-width);
+  }
+}

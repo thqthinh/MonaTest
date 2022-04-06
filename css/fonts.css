@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Biennale Book";
+  src: url("../fonts/Biennale-Book.woff2") format("woff2"),
+    url("../fonts/Biennale-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Biennale";
+  src: url("../fonts/Biennale-Medium.woff2") format("woff2"),
+    url("../fonts/Biennale-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Biennale";
+  src: url("../fonts/Biennale-Light.woff2") format("woff2"),
+    url("../fonts/Biennale-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Biennale";
+  src: url("../fonts/Biennale-SemiBold.woff2") format("woff2"),
+    url("../fonts/Biennale-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Biennale";
+  src: url("../fonts/Biennale-Regular.woff2") format("woff2"),
+    url("../fonts/Biennale-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}

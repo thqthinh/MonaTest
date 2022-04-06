@@ -1,0 +1,83 @@
+:root {
+  /* ======================================================BOXED LAYOUT======================================================= */
+
+  --container-max-width: 100%;
+  --container-width: 1200px;
+
+  /* colors - tuỳ chỉnh */
+  --white-cl: #fff;
+  --black-cl: #000;
+  --purple-cl: #4d46fa;
+  --purple-light: #f4f2f9;
+  --orange-cl: #f06336;
+  --orange-light: #f063361a;
+
+  --border-gray: rgba(0, 0, 0, 0.1);
+
+  /* timing transition -  */
+  --t: 0.4s;
+
+  /* font-size & line-height heading */
+
+  --h1-fs: 7.2rem;
+  --h1-lh: 9.9rem;
+
+  --h2-fs: 2.4rem;
+  --h2-lh: 3.3rem;
+
+  --h3-fs: 1.6rem;
+  --h3-lh: 2.2rem;
+
+  --body14-fs: 1.4rem;
+  --body14-lh: 1.9rem;
+
+  --body12-fs: 1.2rem;
+  --body12-lh: 1.7rem;
+
+  /* Genaral Variable */
+  --height-header: 104px;
+  --height-header-sm: 80px;
+  --gap: 30px;
+}
+@media (max-width: 991px) {
+  /* Tablet */
+  :root {
+    --h1-fs: 5.2rem;
+    --h1-lh: 7.2rem;
+
+    --h2-fs: 2rem;
+    --h2-lh: 3rem;
+
+    --h3-fs: 1.4rem;
+    --h3-lh: 2rem;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  /* Mobile */
+  :root {
+    --h1-fs: 3.6rem;
+    --h1-lh: 4.2rem;
+
+    --h2-fs: 1.6rem;
+    --h2-lh: 2.2rem;
+
+    --h3-fs: 1.2rem;
+    --h3-lh: 1.8rem;
+
+
+    --gap: 20px;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  :root {
+    --h2-fs: 1.4rem;
+    --h2-lh: 2rem;
+
+    
+    --body14-fs: 1.2rem;
+    --body14-lh: 1.7rem;
+    
+  }
+}

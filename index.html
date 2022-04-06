@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+ 
+ 
+
+</head>
+
+<body>
+  <header class="header fixed  w-full --lg-height-header">
+    <div class="container flex ai-center jc-between">
+      <div class="header__left flex">
+        <a href="#" class="header__logo">
+          <img src="img/logo-img.png" alt="">
+        </a>
+        <div class="header__lang flex">
+          <a href="#" class="header__lang-item"><img src="img/lang-1.png" alt=""></a>
+          <a href="#" class="header__lang-item"><img src="img/lang-2.png" alt=""></a>
+        </div>
+      </div>
+      <ul class="header__nav transition-all flex ">
+        <li class="item"><a href="#" class="item-link transition-all font-med --black-cl">Promotion</a></li>
+        <li class="item"><a href="#" class="item-link transition-all font-med --black-cl">Flight Schedule</a></li>
+        <li class="item"><a href="#" class="item-link transition-all font-med --black-cl">About us</a></li>
+        <li class="item"><a href="#" class="item-link transition-all font-med --black-cl">Payment Guide</a></li>
+        <li><a href="#" class=" btn-primary --bg-purple --white-cl hide-on-desktop ">Booking now</a></li>
+
+      </ul>
+      <a href="#" class="header__cta btn-primary --bg-purple --white-cl hide-on-tablet">Booking now</a>
+      <div class="header__hamburger relative hide-on-desktop pointer">
+        <span class="transition-all"></span>
+        <span class="transition-all"></span>
+        <span class="transition-all"></span>
+      </div>
+    </div>
+  </header>
+
+  <div class="banner flex ai-center">
+    <div class="container">
+      <div class="banner__text ">
+        <h1 class="title heading --h1 font-light">
+          Hello! <br>
+          Where are <br>
+          you <span class="--purple-cl font-semibold">flying</span> to ...
+        </h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-wrapper mx-auto --bg-white rounded-lg relative z-20">
+    <form class="form-booking relative">
+      <div class="form-booking__heading flex">
+        <div class="radio-input-wrapper flex">
+          <div class="input-wrapper flex ai-center">
+            <input name="category" id="one" type="radio" class="radio-input">
+            <label for="one" class="radio-label --bg-purple-light pointer rounded-full"></label>
+            <span class="font-semibold">One way / Round-trip</span>
+          </div>
+          <div class="input-wrapper flex ai-center">
+            <input name="category" id="multi" type="radio" class="radio-input">
+            <label for="multi" class="radio-label --bg-purple-light pointer rounded-full"></label>
+            <span class="font-semibold">Multi-city</span>
+          </div>
+        </div>
+        <div class="dropdown-wrapper flex ai-center">
+          <div class="dropdown --qty">
+            <div class="dropdown-select pointer flex ai-center">
+              <div class="dropdown-value font-semibold">
+                <span class="--purple-cl --number-adult">02</span>Adult,
+                <span class="--purple-cl --number-children">01</span> children
+              </div>
+              <div class="dropdown-icon"><img src="img/dropdown-icon.svg" alt=""></div>
+            </div>
+            <div class="dropdown-list border-gray shadow-main pointer transition-all">
+              <div class="item --adult-item flex ai-center jc-between">
+                <div class="item-left">
+                  <span class="item-text">Adult</span>
+                </div>
+                <div class="item-right">
+                  <input type="button" value="-" class="item-input border-gray --minus">
+                  <input type="number" value="1" class="item-input border-gray --qty text-center">
+                  <input type="button" value="+" class="item-input border-gray --plus">
+                </div>
+              </div>
+              <div class="item --children-item flex ai-center jc-between">
+                <div class="item-left">
+                  <span class="item-text">Children</span>
+                </div>
+                <div class="item-right">
+                  <input type="button" value="-" class="item-input border-gray --minus">
+                  <input type="number" value="1" class="item-input border-gray --qty text-center">
+                  <input type="button" value="+" class="item-input border-gray --plus">
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="dropdown --class">
+            <div class="dropdown-select pointer flex ai-center">
+              <div class="dropdown-value font-semibold">
+                Business Class
+              </div>
+              <div class="dropdown-icon"><img src="img/dropdown-icon.svg" alt=""></div>
+            </div>
+            <div class="dropdown-list border-gray shadow-main pointer transition-all">
+              <div class="item">First Class</div>
+              <div class="item">Premium Class</div>
+              <div class="item">Economy Class</div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-booking__bottom flex ai-center">
+        <div class="input-gr searchbox flex ai-center">
+          <div class="help-border-item overflow-hidden relative --from">
+            <div class="searchbox-item input-item-col --from border-gray rounded-lg">
+              <div class="searchbox-title upper opacity-5 font-semibold">from</div>
+              <input id="search-input-from" type="text" value="Da Nang"
+                class="searchbox-input w-full font-semibold heading --h2 border-none outline-none upper --purple-cl">
+              <div class="searchbox-location font-semibold">Quang Nam, Viet Nam</div>
+            </div>
+            <div class="help-border"></div>
+          </div>
+          <i class="switch-button pointer"><img class="block" src="img/switch-btn.svg" alt=""></i>
+          <div class="help-border-item overflow-hidden relative --to">
+            <div class="searchbox-item input-item-col --to border-gray rounded-lg">
+              <div class="searchbox-title upper opacity-5 font-semibold">to</div>
+              <input id="search-input-to" type="text" value="Ho Chi Minh"
+                class="searchbox-input w-full font-semibold heading --h2 border-none outline-none upper --purple-cl">
+              <div class="searchbox-location font-semibold">Quang Nam, Viet Nam</div>
+            </div>
+            <div class="help-border"></div>
+          </div>
+        </div>
+        <div class="input-gr datepicker input-item-col  flex border-gray rounded-lg">
+          <div class="datepicker-item --start">
+            <div class="datepicker-title font-semibold opacity-5">Departure</div>
+            <div class="input-wrapper flex">
+              <input id="date-from" value="Fri, 22 Mar, 2022" type="text"
+                class="datepicker-input w-full font-semibold heading --h2 border-none outline-none upper --purple-cl">
+            </div>
+            <div class="datepicker-contrl flex">
+              <div class="btn pointer font-semibold --prev-from">Prev</div>
+              <div class="btn pointer font-semibold --next-from">Next</div>
+            </div>
+          </div>
+          <div class="datepicker-item --return">
+            <div class="datepicker-title font-semibold opacity-5">Return</div>
+            <div class="input-wrapper flex">
+              <input id="date-to" value="" type="text"
+                class="datepicker-input w-full font-semibold heading --h2 border-none outline-none upper --purple-cl">
+            </div>
+            <div class="datepicker-contrl flex">
+              <div class="btn pointer font-semibold --prev-to">Prev</div>
+              <div class="btn pointer font-semibold --next-to">Next</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="submit"
+        class="btn-submit z-30 rounded-lg border-0 outline-none font-semibold --bg-purple --white-cl">
+        Search Flights
+        <i class="icon">
+          <svg width="23" height="14" viewBox="0 0 23 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.2381 1L22 7M22 7L16.2381 13M22 7H0" stroke="currentColor" />
+          </svg>
+
+        </i>
+      </button>
+    </form>
+  </div>
+
+  <footer class="footer relative">
+    <div class="footer__ovl --bg-purple-light w-full h-full z-10 pointer-none "></div>
+    <div class="container relative flex jc-between z-10 ai-center">
+      <div class="footer__col">
+        <ul class="footer__list flex ai-center">
+          <li class="footer__list-item flex ai-center">
+            <div class="icon"><img class="block pointer" src="img/phone-icon.png" alt=""></div>
+            <div class="text">Call us: +84 908 02 02 58</div>
+          </li>
+          <li class="footer__list-item flex ai-center">
+            <i class="icon"><img class="block pointer" src="img/mail-icon.png" alt=""></i>
+            <div class="text">Email: chucinog@gmail.com</div>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <div class="footer__socials flex ai-center">
+          <div class="text">Follow us</div>
+          <div class="line"></div>
+          <a href="#" class="icon"><img class="block " src="img/facebook-icon.png" alt=""></a>
+          <a href="" class="icon"><img class="block " src="img/ins-icon.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+</body>
+
+
+
+</html>

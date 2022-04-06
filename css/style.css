@@ -1,0 +1,10 @@
+@import "reset.css";
+@import "variables.css";
+@import "layouts.css";
+@import "global_class.css";
+@import "components.css";
+
+/* Navigation, header, footer*/
+@import "header.css";
+@import "nav.css";
+@import "footer.css";
