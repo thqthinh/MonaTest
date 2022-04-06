@@ -100,6 +100,15 @@ window.addEventListener("load", () => {
     inputSearchTo.value = searchFromValue;
   });
 
+  const searchFlightForm = document.getElementById("search-flight");
+
+  searchFlightForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    console.log("click");
+  });
+
+  console.log(searchFlightForm);
+
   // datepicker from to input
   $(document).ready(function () {
     $("#date-from").datepicker({
@@ -112,10 +121,12 @@ window.addEventListener("load", () => {
         $("#date-to").datepicker("option", "minDate", dt);
       },
     });
-    $("#date-from").datepicker("setDate", "toDay");
+
     $("#date-to").datepicker({
       numberOfMonth: 1,
       dateFormat: "D, d M, yy",
+      changeMonth: true,
+      changeYear: true,
       minDate: new Date(),
       onSelect: function (selectdate) {
         var dt = new Date(selectdate);
@@ -123,6 +134,10 @@ window.addEventListener("load", () => {
         $("#date-from").datepicker("option", "maxDate", dt);
       },
     });
+    let nextDay = new Date();
+    nextDay.setDate(nextDay.getDate() + 1);
+    $("#date-from").datepicker("setDate", "toDay");
+    $("#date-to").datepicker("setDate", nextDay);
     $(".--next-from").on("click", function () {
       let date = $("#date-from").datepicker("getDate");
       date.setDate(date.getDate() + 1);
