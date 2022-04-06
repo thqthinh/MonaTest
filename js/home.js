@@ -102,10 +102,11 @@ window.addEventListener("load", () => {
 
   const searchFlightForm = document.getElementById("search-flight");
 
-  searchFlightForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    console.log("click");
-  });
+  // searchFlightForm.addEventListener("submit", (e) => {
+  //   e.preventDefault();
+  //   let href = window.location.href;
+  //   console.log('href :>> ', href);
+  // });
 
   console.log(searchFlightForm);
 
