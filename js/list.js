@@ -4,35 +4,35 @@ window.addEventListener("load", () => {
   const resultArr = [
     {
       id: 1,
-      image: "../img/logo-airway.png",
+      image: "img/logo-airway.png",
     },
     {
       id: 2,
-      image: "../img/logo-airway.png",
+      image: "img/logo-airway.png",
     },
     {
       id: 3,
-      image: "../img/logo-vnairlines.png",
+      image: "img/logo-vnairlines.png",
     },
     {
       id: 4,
-      image: "../img/logo-airway.png",
+      image: "img/logo-airway.png",
     },
     {
       id: 5,
-      image: "../img/logo-vnairlines.png",
+      image: "img/logo-vnairlines.png",
     },
     {
       id: 6,
-      image: "../img/logo-airway.png",
+      image: "img/logo-airway.png",
     },
     {
       id: 7,
-      image: "../img/logo-vnairlines.png",
+      image: "img/logo-vnairlines.png",
     },
     {
       id: 8,
-      image: "../img/logo-vnairlines.png",
+      image: "img/logo-vnairlines.png",
     },
   ];
 
